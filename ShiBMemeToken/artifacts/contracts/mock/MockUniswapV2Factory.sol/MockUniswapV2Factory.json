@@ -1,0 +1,62 @@
+{
+  "_format": "hh3-artifact-1",
+  "contractName": "MockUniswapV2Factory",
+  "sourceName": "contracts/mock/MockUniswapV2Factory.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_pair",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenA",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "tokenB",
+          "type": "address"
+        }
+      ],
+      "name": "createPair",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pair",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600e575f5ffd5b5060405161017d38038061017d833981016040819052602b91604e565b5f80546001600160a01b0319166001600160a01b03929092169190911790556079565b5f60208284031215605d575f5ffd5b81516001600160a01b03811681146072575f5ffd5b9392505050565b60f8806100855f395ff3fe6080604052348015600e575f5ffd5b50600436106030575f3560e01c8063a8aa1b31146034578063c9c65396146061575b5f5ffd5b5f546045906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6045606c3660046096565b50505f546001600160a01b031690565b80356001600160a01b03811681146091575f5ffd5b919050565b5f5f6040838503121560a6575f5ffd5b60ad83607c565b915060b960208401607c565b9050925092905056fea2646970667358221220ea91dc13e7ec1545bd2f07e7a31f394025c221c66af9e0bebc3dce34a92c950964736f6c634300081c0033",
+  "deployedBytecode": "0x6080604052348015600e575f5ffd5b50600436106030575f3560e01c8063a8aa1b31146034578063c9c65396146061575b5f5ffd5b5f546045906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6045606c3660046096565b50505f546001600160a01b031690565b80356001600160a01b03811681146091575f5ffd5b919050565b5f5f6040838503121560a6575f5ffd5b60ad83607c565b915060b960208401607c565b9050925092905056fea2646970667358221220ea91dc13e7ec1545bd2f07e7a31f394025c221c66af9e0bebc3dce34a92c950964736f6c634300081c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "immutableReferences": {},
+  "inputSourceName": "project/contracts/mock/MockUniswapV2Factory.sol",
+  "buildInfoId": "solc-0_8_28-bc2b1079036e000f4ad2b119b21babfa256064cf"
+}

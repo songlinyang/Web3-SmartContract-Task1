@@ -1,0 +1,147 @@
+{
+  "_format": "hh3-artifact-1",
+  "contractName": "ITradingRestricHandler",
+  "sourceName": "contracts/interfaces/ITradingRestricHandler.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getTradeLimitsInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "maxTxAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxWalletAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "dailySellLimit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "dailyTxCountLimit",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct ITradingRestricHandler.TradeLimit",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_addr",
+          "type": "address"
+        }
+      ],
+      "name": "isTradingFree",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_maxTxAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_maxWalletAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_dailySellLimit",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_dailyTxCountLimit",
+          "type": "uint256"
+        }
+      ],
+      "name": "setTradeLimits",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_addr",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "_isFree",
+          "type": "bool"
+        }
+      ],
+      "name": "setTradingFree",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "uniswapV2Pair",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "balanceOf",
+          "type": "uint256"
+        }
+      ],
+      "name": "validateTradeLimits",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "immutableReferences": {},
+  "inputSourceName": "project/contracts/interfaces/ITradingRestricHandler.sol",
+  "buildInfoId": "solc-0_8_28-51a572951e7623a3b6c91997a4e4fba0de2bf366"
+}

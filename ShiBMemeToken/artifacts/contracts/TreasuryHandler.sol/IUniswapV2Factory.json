@@ -1,0 +1,38 @@
+{
+  "_format": "hh3-artifact-1",
+  "contractName": "IUniswapV2Factory",
+  "sourceName": "contracts/TreasuryHandler.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenA",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "tokenB",
+          "type": "address"
+        }
+      ],
+      "name": "createPair",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "pair",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "immutableReferences": {},
+  "inputSourceName": "project/contracts/TreasuryHandler.sol",
+  "buildInfoId": "solc-0_8_28-bc2b1079036e000f4ad2b119b21babfa256064cf"
+}

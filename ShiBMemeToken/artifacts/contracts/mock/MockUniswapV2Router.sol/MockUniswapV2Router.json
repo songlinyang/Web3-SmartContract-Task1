@@ -1,0 +1,192 @@
+{
+  "_format": "hh3-artifact-1",
+  "contractName": "MockUniswapV2Router",
+  "sourceName": "contracts/mock/MockUniswapV2Router.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "factory_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "weth_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "WETH",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountTokenDesired",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountTokenMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountETHMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        }
+      ],
+      "name": "addLiquidityETH",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountToken",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountETH",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "liquidity",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "factory",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "liquidity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountTokenMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountETHMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        }
+      ],
+      "name": "removeLiquidityETH",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountToken",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountETH",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountIn",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountOutMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address[]",
+          "name": "path",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        }
+      ],
+      "name": "swapExactTokensForETHSupportingFeeOnTransferTokens",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600e575f5ffd5b50604051610364380380610364833981016040819052602b916074565b5f80546001600160a01b039384166001600160a01b0319918216179091556001805492909316911617905560a0565b80516001600160a01b0381168114606f575f5ffd5b919050565b5f5f604083850312156084575f5ffd5b608b83605a565b9150609760208401605a565b90509250929050565b6102b7806100ad5f395ff3fe608060405260043610610049575f3560e01c806302751cec1461004d578063791ac94714610086578063ad5c4648146100aa578063c45a0155146100db578063f305d719146100f7575b5f5ffd5b348015610058575f5ffd5b5061006c610067366004610164565b610130565b604080519283526020830191909152015b60405180910390f35b348015610091575f5ffd5b506100a86100a03660046101ba565b505050505050565b005b3480156100b5575f5ffd5b506001546001600160a01b03165b6040516001600160a01b03909116815260200161007d565b3480156100e6575f5ffd5b505f546001600160a01b03166100c3565b610115610105366004610164565b5092943494506103e89350915050565b6040805193845260208401929092529082015260600161007d565b5f8061013d876002610258565b98969750505050505050565b80356001600160a01b038116811461015f575f5ffd5b919050565b5f5f5f5f5f5f60c08789031215610179575f5ffd5b61018287610149565b95506020870135945060408701359350606087013592506101a560808801610149565b9598949750929591949360a090920135925050565b5f5f5f5f5f5f60a087890312156101cf575f5ffd5b8635955060208701359450604087013567ffffffffffffffff8111156101f3575f5ffd5b8701601f81018913610203575f5ffd5b803567ffffffffffffffff811115610219575f5ffd5b8960208260051b840101111561022d575f5ffd5b6020919091019450925061024360608801610149565b95989497509295919493608090920135925050565b808202811582820484141761027b57634e487b7160e01b5f52601160045260245ffd5b9291505056fea2646970667358221220caee514df0b643e4d64c0a7306c71cd8b80b4c75ff2909355116d874bb6977f264736f6c634300081c0033",
+  "deployedBytecode": "0x608060405260043610610049575f3560e01c806302751cec1461004d578063791ac94714610086578063ad5c4648146100aa578063c45a0155146100db578063f305d719146100f7575b5f5ffd5b348015610058575f5ffd5b5061006c610067366004610164565b610130565b604080519283526020830191909152015b60405180910390f35b348015610091575f5ffd5b506100a86100a03660046101ba565b505050505050565b005b3480156100b5575f5ffd5b506001546001600160a01b03165b6040516001600160a01b03909116815260200161007d565b3480156100e6575f5ffd5b505f546001600160a01b03166100c3565b610115610105366004610164565b5092943494506103e89350915050565b6040805193845260208401929092529082015260600161007d565b5f8061013d876002610258565b98969750505050505050565b80356001600160a01b038116811461015f575f5ffd5b919050565b5f5f5f5f5f5f60c08789031215610179575f5ffd5b61018287610149565b95506020870135945060408701359350606087013592506101a560808801610149565b9598949750929591949360a090920135925050565b5f5f5f5f5f5f60a087890312156101cf575f5ffd5b8635955060208701359450604087013567ffffffffffffffff8111156101f3575f5ffd5b8701601f81018913610203575f5ffd5b803567ffffffffffffffff811115610219575f5ffd5b8960208260051b840101111561022d575f5ffd5b6020919091019450925061024360608801610149565b95989497509295919493608090920135925050565b808202811582820484141761027b57634e487b7160e01b5f52601160045260245ffd5b9291505056fea2646970667358221220caee514df0b643e4d64c0a7306c71cd8b80b4c75ff2909355116d874bb6977f264736f6c634300081c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "immutableReferences": {},
+  "inputSourceName": "project/contracts/mock/MockUniswapV2Router.sol",
+  "buildInfoId": "solc-0_8_28-bc2b1079036e000f4ad2b119b21babfa256064cf"
+}

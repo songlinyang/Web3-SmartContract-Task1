@@ -1,0 +1,172 @@
+{
+  "_format": "hh3-artifact-1",
+  "contractName": "ITaxHandler",
+  "sourceName": "contracts/interfaces/ITaxHandler.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "taxAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "burnTax",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTax",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTaxConfig",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "buyTaxFee",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "sellTaxFee",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "transferTaxFee",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "taxWallet",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "uniswapPair",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct ITaxHandler.TaxInfoConfig",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_addr",
+          "type": "address"
+        }
+      ],
+      "name": "isTaxFree",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_buyTax",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_sellTax",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_transferTax",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_taxWallet",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_uniswapPair",
+          "type": "address"
+        }
+      ],
+      "name": "setTaxConfig",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_addr",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "_isTaxFreeFlag",
+          "type": "bool"
+        }
+      ],
+      "name": "setTaxFree",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "immutableReferences": {},
+  "inputSourceName": "project/contracts/interfaces/ITaxHandler.sol",
+  "buildInfoId": "solc-0_8_28-0292e72cbff0a2e74b6d1448201ba08cba477e58"
+}
